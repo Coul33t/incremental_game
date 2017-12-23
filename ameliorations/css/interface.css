@@ -1,0 +1,57 @@
+body {
+    background: #FFFFFF;
+}
+
+#menuBar {
+    width:98%;
+}
+
+#menuBar .tab-content {
+    color : white;
+    background-color: #FFFFFF;
+    padding : 5px 15px;
+}
+
+#menuBar .tab-content > .tab-pane.active {
+    font-family: 'Mukta', sans-serif;
+    font-size: 30px;
+    color: #000000;
+}
+
+#menuBar .nav-pills > li > a {
+    border-radius: 0;
+    font-family : 'Poiret One', cursive;
+    font-size : 40px;
+    color : #FF6666;
+}
+
+#menuBar .nav-pills > li.active > a {
+  color : black;
+}
+
+#menuBar .nav-pills > li > a:hover {
+  background-color : #ffaeae;
+  color : black;
+}
+
+#menuBar .nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus, .nav-pills > li > a:hover {
+  background-color: #FF6666;
+}
+
+h1 {
+  font-family: 'Raleway', sans-serif;
+  font-size : 100px;
+}
+
+.btn {
+    border: 1px solid;
+    margin: 2px;
+    width: 100%;
+    border-color: #000000;
+    background: #CCCCCC;
+    font-size: 20px;
+}
+
+hr {
+    border-top: 1px solid #AAAAAA;
+}

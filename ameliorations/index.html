@@ -1,0 +1,132 @@
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Yo</title>
+
+        <link href="libraries/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/interface.css" rel="stylesheet"/>
+
+        <link href='https://fonts.googleapis.com/css?family=Poiret+One|Raleway:500,400' rel='stylesheet'>
+        <link href="https://fonts.googleapis.com/css?family=Mukta" rel="stylesheet">
+
+
+    </head>
+
+    <body>
+        <div class="container", id="title">
+            <h1> SLT SAVA </h1>
+        </div>
+
+        <div id="Subtitle"><h2><span id="lvl_0">Units</span> : <span id="lvl_0_count">0</span></h2></div>
+
+        <div id="menuBar" class="container">
+
+            <ul class="nav nav-pills">
+                <li class="active"><a href="#accueil" data-toggle="tab"> Accueil </a></li>
+                <li><a href="#upgrades" data-toggle="tab"> Upgrades </a></li>
+                <li><a href="#leaderboard" data-toggle="tab"> Leaderboard </a></li>
+                <li><a href="#options" data-toggle="tab"> Options </a></li>
+            </ul>
+
+            <div class="tab-content">
+                <div class="tab-pane active" id="accueil">
+                    <div class="row">
+                        <div class="col">
+                            <div class="row" style='display:inline'>
+                                <div class="col-lg-4">Number</div>
+                                <div class="col-lg-2"></div>
+                                <div class="col-lg-2">Buy 1</div>
+                                <div class="col-lg-2">Buy max</div>
+                            </div>
+                            <!--<div class="row" ud="units_row" style='display:inline'>
+                                <div class="col-lg-4">Units</div>
+                                <div class="col-lg-4"><span id="units">0</span></div>
+                                <div class="col-lg-2"><button onclick="unitsClick(1)" class="btn">Click Me!</button></div>
+                            </div>-->
+                            <hr>
+                            <div class="row" id="lvl_1_row" style='display:inline'>
+                                <div class="col-lg-4"><span id="lvl_1">Cursors</span> (x<span id="lvl_1_multiplier_display"></span>)</div>
+                                <div class="col-lg-2"><span id="lvl_1_count">0</span></div>
+                                <div class="col-lg-2"><button onclick="eng.buy('lvl_1')" class="btn">Cost : <span id="lvl_1_cost">10</span></button></div>
+                                <div class="col-lg-2">Not yet</div>
+
+                            </div>
+                            <hr>
+                            <div class="row" id="lvl_2_row" style='display:none'>
+                                <div class="col-lg-4"><span id="lvl_2">Meta-Cursors</span> (x<span id="lvl_2_multiplier_display"></span>)</div>
+                                <div class="col-lg-2"><span id="lvl_2_count">0</span></div>
+                                <div class="col-lg-2"><button onclick="eng.buy('lvl_2')" class="btn">Cost : <span id="lvl_2_cost">100</span></button></div>
+                                <div class="col-lg-2">Not yet</div>
+                            </div>
+                            <hr>
+                            <div class="row" id="lvl_3_row" style='display:none'>
+                                <div class="col-lg-4"><span id="lvl_3">Meta-Meta-Cursors</span> (x<span id="lvl_3_multiplier_display"></span>)</div>
+                                <div class="col-lg-2"><span id="lvl_3_count">0</span></div>
+                                <div class="col-lg-2"><button onclick="eng.buy('lvl_3')" class="btn">Cost : <span id="lvl_3_cost">1000</span></button></div>
+                                <div class="col-lg-2">Not yet</div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="tab-pane" id="upgrades">
+                    <div class="row" id="names_upgrade" style='display:inline'>
+                        <div class="col-lg-3"> Multipliers </div>
+                        <div class="col-lg-3"> Autobuyers </div>
+                    </div>
+
+                    <div class="row" id="cursors_upgrade" style='display:inline'>
+                        <div class="col-lg-3"><button onclick="buyMultiplier('cursors')" class="btn">Current multiplier : <span id="cursors_multiplier">
+                        </span><br />Cost : <span id="cursors_multiplier_COST"></span></button></div>
+
+                         <div class="col-lg-3"><button onclick="buyAutobuyer('cursors')" class="btn">Current interval : <span id="cursors_autobuyer_interval">
+                        </span><br />Cost : <span id="cursors_autobuyer_COST"></span></button></div>
+                    </div>
+
+                    <div class="row" id="meta_cursors_upgrade" style='display:inline'>
+                        <div class="col-lg-3"><button onclick="buyMultiplier('meta_cursors')" class="btn">Current multiplier : <span id="meta_cursors_multiplier">
+                        </span><br />Cost : <span id="meta_cursors_multiplier_COST"></span></button></div>
+                        
+                        <div class="col-lg-3"><button onclick="buyAutobuyer('meta_cursors')" class="btn">Current interval : <span id="meta_cursors_autobuyer_interval">
+                        </span><br />Cost : <span id="meta_cursors_autobuyer_COST"></span></button></div>
+                    </div>
+
+                    <div class="row" id="meta_meta_cursors_upgrade" style='display:inline'>
+                        <div class="col-lg-3"><button onclick="buyMultiplier('meta_meta_cursors')" class="btn">Current multiplier : <span id="meta_meta_cursors_multiplier">
+                        </span><br />Cost : <span id="meta_meta_cursors_multiplier_COST"></span></button></div>
+
+                        <div class="col-lg-3"><button onclick="buyAutobuyer('meta_meta_cursors')" class="btn">Current interval : <span id="meta_meta_cursors_autobuyer_interval">
+                        </span><br />Cost : <span id="meta_meta_cursors_autobuyer_COST"></span></button></div>
+                    </div>
+
+                </div>
+
+                <div class="tab-pane" id="leaderboard">
+                    <h1> LEL </h1>
+                </div>
+
+                <div class="tab-pane" id="options">
+                    <button onclick="leaderboard()" class="btn">Send to leaderboard</button>
+                    <form id="save">
+                        Nom du joueur : <input type="text", value="Default", id="player_save">
+                        <input class="btn" type="submit", value="Sauvegarder">
+                    </form>
+                    <form id="load">
+                        Nom du joueur : <input type="text", value="Default", id="player_load">
+                        <input class="btn" type="submit", value="Charger">
+                    </form>
+                </div>
+            </div>
+
+        </div>
+
+        <script src="libraries/jquery/jquery.min.js"></script>
+        <script src="libraries/bootstrap/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="main_typescript.js"></script>
+    </body>
+</html>
